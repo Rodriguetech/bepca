@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Bepca - welcome{% endblock %}</title>
+        <title>{% block title %}Bpca - welcome{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-top  bg-white">
         <div class="container">
             <a class="navbar-brand" href="/">
-                  BEPCA
+                <img src="{{asset('assets/img/logo.png')}}" alt="">
             </a>
             <a class="navbar-toggle order-4 popup-inline" href="#navbar-mobile-style-1"><span></span><span></span><span></span></a>
             <ul class="nav navbar-nav order-2 ms-auto nav-no-opacity">
@@ -31,15 +31,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/#administration"><span>Administration</span></a>
+                    <a class="nav-link" href="/administration"><span>Administration</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/#guidelines"><span>Guidelines</span></a>
+                    <a class="nav-link" href="/guidelines"><span>Guidelines</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/#about"><span>About BEPCA</span></a>
+                    <a class="nav-link" href="/about"><span>About BPCA</span></a>
                 </li>
 
             </ul><!-- Button-->
@@ -49,7 +49,7 @@
     <div class="navbar navbar-mobile navbar-mobile-style-1 bg-white mfp-hide" id="navbar-mobile-style-1">
         <div class="navbar-wrapper">
             <div class="navbar-head"><a class="navbar-brand d-block d-md-none" href="/">
-                    BEPCA
+                    <img src="{{asset('assets/img/logo.png')}}" alt="">
                 </a>
                 <a class="navbar-toggle popup-modal-dismiss" href="#"><span></span><span></span><span></span></a></div>
             <div class="navbar-body">
@@ -59,15 +59,15 @@
                     </li>
 
                     <li class="nav-item navbar-collapse">
-                        <a class="nav-link" href="/#administration"><span>Administration</span></a>
+                        <a class="nav-link" href="/administration"><span>Administration</span></a>
                     </li>
 
                     <li class="nav-item navbar-collapse">
-                        <a class="nav-link" href="/#guidelines"><span>Guidelines</span></a>
+                        <a class="nav-link" href="/guidelines"><span>Guidelines</span></a>
                     </li>
 
                     <li class="nav-item navbar-collapse">
-                        <a class="nav-link" href="/#about"><span>About BEPCA</span></a>
+                        <a class="nav-link" href="/about"><span>About BPCA</span></a>
                     </li>
 
                 </ul>
@@ -97,6 +97,10 @@
                         </svg>info@bepca.com</a>
                 </li>
 
+
+
+
+
             </ul>
 
         </div>
@@ -111,13 +115,13 @@
             <div class="row gy-50">
                 <div class="col-12 col-lg-3">
                     <a class="d-block text-white mb-30" href="/">
-                       BEPCA
+                       BPCA
                     </a>
                     <p class="font-size-15 mb-35">
-                        BEPCA is authorized by Government of Benin to operate in the state of Benin.
+                        BPCA is authorized by Government of Benin to operate  in Benin.
                     </p>
 
-                    <p class="font-size-13 text-muted m-0">© Design by BEPCA.</p>
+                    <p class="font-size-13 text-muted m-0">© Design by BPCA.</p>
                 </div>
                 <div class="col-2 d-none d-lg-block"></div>
                 <div class="col-12 col-lg-7">
@@ -126,15 +130,15 @@
                             <h6 class="display-6 text-white mb-20">Headings</h6>
                             <ul class="nav flex-column text-white nav-opacity nav-gap-sm">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/#administration"><span>Administration</span></a>
+                                    <a class="nav-link" href="/administration"><span>Administration</span></a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/#guidelines"><span>Guidelines</span></a>
+                                    <a class="nav-link" href="/guidelines"><span>Guidelines</span></a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/#about"><span>About BEPCA</span></a>
+                                    <a class="nav-link" href="/about"><span>About BPCA</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -143,6 +147,12 @@
                             <ul class="nav flex-column text-white nav-opacity nav-gap-sm">
                                 <li class="nav-item"><a class="nav-link" href="tel:(+229) 17 00 35 19">(+229) 17 00 35 19</a></li>
                                 <li class="nav-item"><a class="nav-link" href="mailto:info@bepca.com">info@bepca.com</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">
+                                        03 BP 1785 avenue Jean II Quartier Zongo Nima COTONOU
+                                        Benin Republic
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

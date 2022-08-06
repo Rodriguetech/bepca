@@ -1,37 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}About{% endblock %}
 
 {% block body %}
 
 
-    <div class="pt-90 pb-90 bg-dark shape-parent">
-        <!-- Shape-->
-        <div class="shape justify-content-start align-items-end">
-            <img loading="lazy" src="{{asset('assets/img/root/home-1-shape-364x300.png')}}" alt="" width="364" height="300"></div>
-        <div class="background start-custom">
-            <div class="background-image jarallax" data-jarallax data-speed="0.8">
-                <img class="jarallax-img" loading="lazy" src="{{asset('assets/img/root/call-to-action-1920x1080.jpg')}}" alt=""></div>
-            <div class="background-color" style="--background-color: #481FA0; opacity: .9;"></div>
-        </div>
-        <div class="container">
-            <div class="row gy-70">
-                <div class="col-lg-6 offset-lg-1 order-lg-2">
-                    <img class="w-100 rounded-4 shadow mb-lg-n210 rellax no-transform-lg" loading="lazy" src="{{asset('assets/port_de_cotonou.jpg')}}" alt=""></div>
-                <div class="col-lg-5">
-                    <h1 class="text-white mb-45"><span class="highlight">Autorité Béninoise </span>de Contrôle des Produits</h1>
-                    <p class="mb-45 font-size-18 fw-medium text-white pe-lg-30">The organization was established to counter illicit and counterfeit
-                        products in Benin Republic in 1993 under the country's health and
-                        safety law to issue Product Approval
-                    </p><!-- Button-->
-                    <a class="btn btn-accent-1" href="/#contact">
-                        Contact us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
     <br><br>
+
 
     <div id="about">
         <div class="container">
@@ -81,69 +56,4 @@
             </div>
         </div>
     </div>
-
-    <div class="pt-120 pb-130 bg-dark shape-parent overflow-hidden" id="contact">
-       <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h2 class="mb-25 text-white text-center" data-show="startbox">Contact</h2>
-
-                    {% if notification %}
-
-
-                        <div class="alert p-0 alert-success alert-dismissible" role="alert">
-                            <div>{{ notification }}</div>,
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-
-                    {% endif %}
-
-                    <div class="mt-75" data-show="startbox">
-                        {{ form_start(form)}}
-                        <div class="row gy-40">
-                            <div class="col-12 col-md-6">
-                                {{ form_label(form.nom, 'Firstname', {'label_attr': {'class': 'form-label'}}) }}
-                                {{ form_row(form.nom,  {'attr': {'class': 'form-control form-control-gray'}}) }}
-                            </div>
-                            <div class="col-12 col-md-6">
-                                {{ form_label(form.prenom, 'Lastname', {'label_attr': {'class': 'form-label'}}) }}
-                                {{ form_row(form.prenom,  {'attr': {'class': 'form-control form-control-gray'}}) }}
-                            </div>
-
-                            <div class="col-12 col-md-12">
-                                {{ form_label(form.email, 'Email', {'label_attr': {'class': 'form-label'}}) }}
-                                {{ form_row(form.email,  {'attr': {'class': 'form-control form-control-gray'}}) }}
-                            </div>
-
-                            <div class="col-12 mb-10">
-                                {{ form_label(form.message, 'Message', {'label_attr': {'class': 'form-label'}}) }}
-                                {{ form_row(form.message,  {'attr': {'class': 'form-control form-control-gray', 'rows':'2'}}) }}
-                            </div>
-                            <br>
-                            <div class="col-12 text-center">
-                                {{form_row(form.submit, {'attr': {'class': 'btn btn-accent-1'}})}}
-                            </div>
-                        </div>
-                        {{ form_end(form)}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 {% endblock %}
-
-{% block scripts %}
-
-    <script>
-        const alertTrigger = document.getElementById('liveAlertBtn');
-        if (alertTrigger) {
-            alertTrigger.addEventListener('click', () => {
-                alert('Hello world!')
-            })
-        }
-    </script>
-
-{% endblock %}
-
